@@ -74,6 +74,6 @@ public class MainActivity extends Activity {
     }
 
     @Override public void onBackPressed() {
-        Toast.makeText(this, "استعمل أزرار التطبيق للرجوع أو إنهاء الطلبية", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"MERCI", Toast.LENGTH_SHORT).show();
     }
 }
