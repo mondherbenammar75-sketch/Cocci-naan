@@ -24,7 +24,7 @@ jobs:
           gradle-version: '9.4.1'
 
       - name: Extract Android project
-        run: unzip -o COCCI_NAAN_Android_Studio.zip
+        run: unzip -o COCCI_NAAN_DirectPrint_Source.zip
 
       - name: Update Android build versions
         run: |
