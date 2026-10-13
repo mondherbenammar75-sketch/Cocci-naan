@@ -18,17 +18,18 @@ jobs:
           distribution: temurin
           java-version: '17'
 
+      
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: '9.4.1'
+          gradle-version: '9.3.1'
 
       - name: Extract Android project
         run: unzip -o COCCI_NAAN_DirectPrint_Source.zip
 
       - name: Update Android build versions
         run: |
-          sed -i "s/version '8.7.3'/version '9.2.0'/" COCCI_NAAN_Android/build.gradle
+          sed -i "s/version '8.7.3'/version '9.1.1'/" COCCI_NAAN_Android/build.gradle
           sed -i 's/compileSdk 35/compileSdk 37/g; s/compileSdk = 35/compileSdk = 37/g' COCCI_NAAN_Android/app/build.gradle
 
       - name: Build APK
